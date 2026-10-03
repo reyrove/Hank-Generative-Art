@@ -1,190 +1,167 @@
 # Hank — Generative Art
 
-[![Live Demo](https://img.shields.io/badge/demo-live-green?style=for-the-badge)](https://reyrove.github.io/Hank-Generative-Art)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
-
-> **Generative ellipse drift art.** Each refresh creates a unique composition of a drifting ellipse with shifting colors, bouncing across a diagonal gradient background in infinite motion.
-
-## 🎨 Live Demo
-
-<div align="center">
-  <a href="https://reyrove.github.io/Hank-Generative-Art" target="_blank">
-    <img src="demo-screenshot.jpg" alt="Hank Website Demo" width="800" style="border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.4);"/>
-  </a>
-  <br><br>
-  <a href="https://reyrove.github.io/Hank-Generative-Art" target="_blank">
-    <img src="https://img.shields.io/badge/🌐_View_Live_Demo-0a0a0a?style=for-the-badge&logo=githubpages&logoColor=white&color=c9a84c" alt="View Live Demo" width="300"/>
-  </a>
-  <br>
-  <em>Click the image or button to experience the generative art</em>
-</div>
-
-## 👕 Apparel Preview
-
-<div align="center">
-  <img src="Hank.jpg" alt="Hank on T-Shirt" width="600" style="border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.3);"/>
-  <br>
-  <em>Hank artwork printed on a T-shirt</em>
-</div>
-
-## ✨ Features
-
-- **Drifting Ellipse** — A single ellipse continuously moves and bounces
-- **Infinite Motion** — Endless animation with smooth transitions
-- **Color Oscillation** — RGB values shift randomly for dynamic color changes
-- **Gradient Background** — Diagonal gradient with two random colors
-- **Rich Color Palettes** — 200+ dark, rich background colors
-- **Seed-Based** — Every composition is unique and reproducible via its seed
-- **Save & Share** — Download as PNG with seed in filename
-- **Apparel Mode** — Preview artwork on a T-shirt mockup
-- **Responsive** — Works on desktop, tablet, and mobile
-- **Pure JavaScript** — No external dependencies
-- **Keyboard Shortcuts**:
-  - `R` — Regenerate
-  - `S` — Save image
-  - `T` — Toggle apparel view
-
-## 🎨 Artwork Details
-
-| Parameter | Range | Description |
-|-----------|-------|-------------|
-| **Background Colors** | 200+ options | Dark, rich color palette |
-| **Ellipse Size** | Variable | Changes and bounces |
-| **Ellipse Position** | Variable | Drifts across canvas |
-| **Ellipse Color** | RGB | Randomly shifts over time |
-| **Rotation** | 0–PI | Rotates at random speed |
-
-## 🎯 How It Works
-
-The artwork features a single ellipse that:
-
-1. **Drifts** — Moves continuously across the canvas
-2. **Bounces** — Reflects off walls and boundaries
-3. **Changes Size** — Width and height oscillate
-4. **Shifts Color** — RGB values drift randomly
-5. **Rotates** — Spins at a random speed
-
-All parameters are randomized on each regeneration.
-
-## 🚀 Quick Start
-
-### Local Development
-
-```bash
-# Clone the repository
-git clone https://github.com/reyrove/Hank-Generative-Art.git
-
-# Navigate to the directory
-cd Hank-Generative-Art
-
-# Open in browser
-open index.html
-# or use a live server
-```
-
-### Deploy to GitHub Pages
-
-1. Push to GitHub
-2. Go to Settings → Pages
-3. Select branch `main` and root folder
-4. Your site will be live at `https://reyrove.github.io/Hank-Generative-Art`
-
-## 🧠 How It Works
-
-The artwork is generated using a deterministic random number generator, seeded by timestamp + random noise. Every refresh:
-
-1. **Setup**:
-   - Two random background colors for gradient
-   - Random ellipse position, size, and rotation
-   - Random RGB starting color
-   - Random drift and bounce parameters
-
-2. **Animation**:
-   - Ellipse moves continuously
-   - Bounces off canvas edges
-   - Size oscillates within bounds
-   - Color shifts randomly over time
-   - Rotates at varying speeds
-
-3. **Rendering**:
-   - Diagonal gradient background
-   - Single stroke ellipse with no fill
-   - Smooth, continuous animation
-
-## 📁 File Structure
-
-```
-Hank-Generative-Art/
-├── index.html          # Main application (all-in-one)
-├── Hank.jpg            # T-shirt mockup image
-├── fav.svg             # Favicon
-├── demo-screenshot.jpg # Website demo screenshot
-├── README.md           # This file
-└── LICENSE             # MIT License
-```
-
-## 🛠️ Tech Stack
-
-- **Pure Vanilla HTML/CSS/JS** — No dependencies
-- **Canvas API** — 2D rendering
-- **CSS Flexbox/Grid** — Responsive layout
-- **GitHub Pages** — Hosting
-
-## 🎯 Interactive Controls
-
-| Action | Keyboard | Button |
-|--------|----------|--------|
-| Regenerate | `R` | Click "regenerate" |
-| Save Image | `S` | Click "regenerate" |
-| Toggle Apparel | `T` | Click "apparel" |
-
-## 🎨 The Creative Process
-
-### Infinite Motion
-The ellipse never stops moving. It drifts, bounces, and evolves, creating a hypnotic, meditative experience.
-
-### Color Oscillation
-RGB values shift randomly over time, creating subtle and sometimes dramatic color changes that keep the artwork feeling alive.
-
-### Gradient Background
-Two random colors from a palette of 200+ dark, rich colors create a beautiful diagonal gradient that grounds the drifting ellipse.
-
-### Organic Feel
-Despite being a simple ellipse, the combination of drifting motion, size changes, rotation, and color shifts creates an organic, living quality.
-
-## 📱 Responsive Design
-
-The application automatically adapts to:
-- Desktop screens
-- Tablets
-- Mobile phones
-- Landscape orientation
-- Various aspect ratios
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to:
-- Fork the repository
-- Create a feature branch
-- Submit a pull request
-
-### Ideas for Contributions:
-- Multiple ellipses
-- Different shapes
-- Mouse interaction
-- Speed controls
-- Performance optimizations
-
-## 📄 License
-
-MIT License — see [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- Pure JavaScript implementation
-- Inspired by generative drift art
-- Special thanks to the creative coding community
+> A seed-based generative system for drifting ellipse compositions.  
+> A reproducible catalogue of computational motion studies.
 
 ---
 
-**Built with ❤️ and infinite drift**
+## What is this?
+
+**Hank** is a generative design system that drifts a single stroked ellipse across a two-tone field. Its position, rotation, scale, and colour all oscillate independently — producing a continuous, never-repeating trace that is neither fully planned nor fully random, but **emergent**.
+
+Every artwork in this catalogue is defined by a single numeric seed. The same seed always produces the identical composition — making each piece **traceable, reproducible, and licensable** across textile, print, and apparel applications.
+
+Named for the coiled unit of yarn — a single continuous strand, wound and rewound, its colour shifting as it turns — **Hank** translates that logic into code.
+
+---
+
+## Live
+
+🌐 **[View the catalogue →](https://reyrove.github.io/Hank-Generative-Art/)**
+
+---
+
+## The System
+
+The generator combines two layers:
+
+| Layer | Description |
+|-------|-------------|
+| **Ellipse drift** | A stroked ellipse translated, rotated, and scaled per frame — bounding against the canvas edges. |
+| **Colour oscillation** | The stroke colour drifts through RGB space, bounded by the spectrum. |
+
+Both layers are driven by the same seed, ensuring deterministic output.
+
+### Parameters
+
+- **Ellipse count** — a single continuous stroked ring
+- **Stroke width** — derived from canvas scale
+- **Drift velocity** — X/Y translation, width/height scale, rotation rate, all seeded
+- **Colour range** — RGB oscillation bounded per seed
+- **Palette pair** — two-tone diagonal gradient drawn from the palette
+
+---
+
+## Structure
+
+```
+Hank-Generative-Art/
+├── index.html          ← Full catalogue (single-file)
+├── images/
+│   ├── fav.svg
+│   ├── hank-tote.png
+│   ├── hank-tee.png
+│   └── hank-cushion.png
+├── Hank.jpg            ← Apparel mockup
+└── README.md
+```
+
+The entire project is contained in a single `index.html` — no build step, no dependencies, no framework. Open it in any modern browser.
+
+---
+
+## Features
+
+- **Seed-based generation** — every composition is deterministic and reproducible
+- **Live animation** — cover, plate, and framed print drift continuously
+- **Live catalogue** — cover, statement, plate, surfaces, process, archive, commission sections
+- **Multiple surfaces** — print, scarf, textile, wallpaper — all rendered from the same seed
+- **Archive of 8 seeds** — click any plate to load it into the main view
+- **PNG export** — download the current frame directly from the browser
+- **Keyboard shortcuts** — `R` for new seed, `S` to save
+- **Legal modal** — licensing, terms, and credits built in
+- **Responsive** — works on desktop, tablet, and mobile
+- **Mobile-first navbar** — horizontally scrollable with fade hint
+
+---
+
+## Usage
+
+### Generate a new composition
+
+Click **New Seed** or press `R`.
+
+### Download the current composition
+
+Click **Download** or press `S`.
+
+### Load a seed from the archive
+
+Click any plate in the **Archive** section.
+
+---
+
+## Color System
+
+Each composition is drawn from a curated palette of 180+ named colours:
+
+- **Palette pair** — two colours chosen per seed, blended into a diagonal gradient background
+- **Stroke colour** — an RGB value that drifts through the spectrum, bounded per seed
+- **Tile bias** — the palette includes deep tones, muted mid-tones, and bright accents, giving each seed a distinct character
+
+Each seed selects a unique combination — no two compositions share the same palette.
+
+---
+
+## Technical Notes
+
+- Pure vanilla JavaScript — no libraries
+- Canvas 2D rendering
+- Custom xorshift random generator for deterministic seeds
+- Device-pixel-ratio aware rendering
+- Static seeded stills for archive and surfaces — live `requestAnimationFrame` loops for cover, plate, and framed print
+- `IntersectionObserver` pauses off-screen animation; `visibilitychange` pauses all loops when the tab is hidden
+- `prefers-reduced-motion` respected
+
+---
+
+## About
+
+**Hank** is a project by [Reyhaneh Daneshdoost](https://reyrove.github.io/) — an Iranian-born artist working at the intersection of classical textile logic and generative systems.
+
+The work begins with a simple observation: the woven surface — repetitive, mathematically structured, infinitely variable — has always been a form of computation, long before computers.
+
+**Hank** is an attempt to render that logic visible.
+
+> *A line drifts across a field — and in that drift, colour remembers itself.*
+
+---
+
+## Licensing
+
+All compositions are seed-documented and available for licensing across textile, surface, and apparel applications.
+
+For commercial use, custom editions, or exclusive rights:
+
+📧 **reyhanehdaneshdoost@gmail.com**
+
+See the **Licensing** section in the live catalogue for details.
+
+---
+
+## Links
+
+- 🌐 [Website](https://reyrove.github.io/)
+- 📷 [Instagram](https://www.instagram.com/rey._.rove/)
+- 💼 [LinkedIn](https://www.linkedin.com/in/reyhaneh-daneshdoost-730481160/)
+- 🐦 [X](https://x.com/reyrove)
+
+---
+
+## Credits
+
+**Design & Generative System**  
+Reyhaneh Daneshdoost
+
+**Typefaces**  
+Cormorant Garamond · DM Mono
+
+**Edition**  
+Hank — Autumn 2026
+
+---
+
+<p align="center">
+  <em>Generative Ellipse Drift</em><br />
+  <sub>© Reyrove Studio · All compositions reproducible by seed</sub>
+</p>
